@@ -1,0 +1,23 @@
+<html>
+<head>
+  <style>
+    body {
+      background-color: #000000;
+    }
+  </style>
+  <script type="text/javascript">
+    var vH = 0;
+    var vS = 100;
+    var vL = 50;
+    var hslstring = "";
+    function change() {
+      hslstring = "hsl("+vH+","+vS+"%,"+vL+"%)";
+      document.querySelector('body').style.background = hslstring;
+      vH++;
+    }
+    setInterval(change, 1000);
+  </script>
+</head>
+<body>
+</body>
+</html>
